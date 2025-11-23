@@ -1,0 +1,85 @@
+//tamirin 1
+
+let number = 2
+let aval = true 
+for (i=2 ; i < number ; i ++)
+    if (number % i == 0)
+    {
+        console.log("aval nist")
+        aval = false
+        break
+    }
+    if (aval == true)
+    {
+        console.log("aval hast")
+    }
+
+//tamrin 2
+
+let employee ={
+    name :"sara",
+    age : 28 , 
+    salary : null,
+    department:undefined
+}
+console.log(employee)
+for (let key in employee)
+{
+    if (employee[key]==null ||employee[key]== undefined){
+        delete employee[key]
+    }
+}
+console.log("Cleaned Object:", employee)
+
+//tamrin 3
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    for (let chek of numbers)
+        if ( chek % 2 === 0) {
+        console.log(chek)
+        }
+
+//tamrin 4
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let sum = 0
+    for (let chek of numbers)
+        sum = sum + chek
+console.log(sum)
+
+//tamrin 5
+
+let a = 0
+let b = 1
+let c = 0
+const had = 5 
+
+console.log(a);
+console.log(b);
+while (b <= had) {
+    c = a + b
+    
+    if (c > had) {
+        break
+    }
+    
+    console.log(c);
+    
+    a = b;
+    b = c;
+}
+
+//tamrin 6
+
+let fact = 60 
+let zarb = 1 
+for (let r = 1 ;r<=fact ; r++){
+    zarb = r * zarb
+}
+console.log(zarb)
+
+
+
+
+        
+
